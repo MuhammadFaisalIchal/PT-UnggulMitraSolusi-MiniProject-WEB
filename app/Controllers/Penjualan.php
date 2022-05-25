@@ -53,17 +53,18 @@ class Penjualan extends BaseController
 
     public function store()
     {
-        $db = db_connect();
-        $query = $db->query('SELECT SUBSTRING(id_nota, 6, 1) + 1 AS newcode FROM penjualan ORDER BY SUBSTRING(id_nota, 6, 1) DESC LIMIT 1;');
-        $row = $query->getRow();
+        return "Sorry, on proggress";
+        // $db = db_connect();
+        // $query = $db->query('SELECT SUBSTRING(id_nota, 6, 1) + 1 AS newcode FROM penjualan ORDER BY SUBSTRING(id_nota, 6, 1) DESC LIMIT 1;');
+        // $row = $query->getRow();
 
-        $newCode = "";
+        // $newCode = "";
 
-        if (isset($row)) {
-            $newCode = "NOTA_" . $row->newcode;
-        } else {
-            $newCode = "NOTA_1";
-        }
+        // if (isset($row)) {
+        //     $newCode = "NOTA_" . $row->newcode;
+        // } else {
+        //     $newCode = "NOTA_1";
+        // }
 
         // $pjModel = new PenjualanModel();
         // $data = [
